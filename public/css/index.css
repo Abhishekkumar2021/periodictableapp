@@ -1,0 +1,124 @@
+.container {
+	width: 100%;
+	min-height: 100vh;
+	padding: 2%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.element {
+	position: relative;
+	height: 200px;
+	width: 200px;
+	border-radius: 50%;
+	background: white;
+	box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.123);
+	margin: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 50px;
+	transition:0.2s ease all;
+}
+.mass {
+	font-size: 20px;
+	padding: 10px 25px;
+	border-radius: 7px;
+	/* box-shadow: 0 0 5px rgba(0, 0, 0, 0.212); */
+	background: white;
+	position: absolute;
+	top: 10px;
+	right: 20px;
+}
+.number {
+	font-size: 20px;
+	padding: 10px 25px;
+	border-radius: 7px;
+	/* box-shadow: 0 0 5px rgba(0, 0, 0, 0.212); */
+	background: white;
+	position: absolute;
+	bottom: 10px;
+	left: 20px;
+}
+.link {
+	position: absolute;
+	font-size: 16px;
+	transform: scale(0);
+	top:45%;
+	left:-30%;
+	transition:0.2s ease all;
+}
+a {
+	text-decoration: none;
+	background: white;
+	padding: 10px 15px;
+	border-radius: 10px;
+	color: rgb(8, 8, 92);
+	box-shadow: -10px 0px 25px rgba(0, 0, 0, 0.2);
+
+}
+.element:hover .link {
+	transform: scale(1);
+}
+.element:hover {
+	animation: shook 0.5s ease ;
+}
+.link:active{
+	animation: shook 0.5s ease ;
+}
+#home {
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	transition:0.2s ease all;
+	text-decoration: none;
+	color: rgba(0, 0, 0, 0.664);
+	padding: 10px 15px;
+	font-size: 20px;
+	border-radius: 5px;
+	background: white;
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.144);
+	z-index: 500;
+}
+
+#home:hover {
+	background: rgb(47, 47, 67);
+	border-radius: 5px;
+	color: white;
+}
+#home:active {
+	transform: scale(0.92);
+}
+@media only screen and (max-width:478px){
+	.element {
+	
+		height: 250px;
+		width: 250px;	
+		font-size: 60px;
+	}
+	.mass {
+		top: 15px;
+		right: 20px;
+	}
+	.number {
+		bottom: 15px;
+		left: 20px;
+	}
+}
+@keyframes shook{
+	0%{
+		transform:scale(1) rotate(0);
+	}
+	25%{
+		transform:scale(1.2) rotate(5deg);
+	}
+	50%{
+		transform:scale(1) rotate(0);
+	}
+	75%{
+		transform:scale(1.2) rotate(-5deg);
+	}
+	100%{
+		transform:scale(1) rotate(0);
+	}
+}

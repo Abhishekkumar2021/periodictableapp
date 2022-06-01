@@ -1,0 +1,35 @@
+.container {
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background: url("../assets/not_found.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+h1 {
+	background: white;
+	padding: 30px 40px;
+	box-shadow: 0px 20px 25px rgba(0, 0, 0, 0.103);
+	border-radius: 10px;
+}
+a {
+	transform: translateY(-50%);
+	background: rgb(25, 32, 55);
+	padding: 10px 15px;
+	box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.295);
+	border-radius: 25px;
+	text-decoration: none;
+	color: white;
+	transition:0.3s ease all;
+}
+a:hover {
+	transform: scale(1.2) translateY(-14px);
+}
+a:active {
+	background: rgb(255, 255, 255);
+	color:rgba(0, 0, 0, 0.8);
+	
+}

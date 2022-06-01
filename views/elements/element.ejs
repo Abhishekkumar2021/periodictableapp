@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title><%= element.name%></title>
+		<link rel="stylesheet" href="/css/app.css" />
+		<link rel="stylesheet" href="/css/element.css" />
+	</head>
+	<body>
+		<div class="container">
+			<canvas></canvas>
+			<div class="properties">
+				<div class="property  symbol">
+					<span>
+					 Symbol
+					</span>
+					<%= element.symbol %>
+				</div>
+				<div class="property">
+					<span>
+					Atomic number
+					</span>
+					<%= element.atomicNumber %>
+				</div>
+				<div class="property">
+					<span>
+					Atomic mass
+					</span>
+					<%= element.atomicMass %>
+				</div>
+				<div class="property">
+					<span>
+					Name
+					</span>
+					<%= element.name %>
+				</div>
+				<div class="property">
+					<span>
+					Atomic radius
+					</span>
+					<%= element.atomicRadius %>(pm)
+					
+				</div>
+				<div class="property">
+					<span>
+					Boiling point
+					</span>
+					<%= element.boilingPoint %>(K)
+					
+				</div>
+				<div class="property">
+					<span>
+					Bonding type
+					</span>
+					<%= element.bondingType %>(K)
+					
+				</div>
+				<div class="property">
+					<span>
+					Electronegativity
+					</span>
+					<%= element.electronegativity %>
+				</div>
+
+				<div class="property">
+					<span>
+					Electonic configuration
+					</span>
+					<%= element.electronicConfiguration%>
+				</div>
+
+				<div class="property">
+					<span>
+					Belongs to
+					</span>
+					<%= element.groupBlock %>
+				</div>
+
+				<div class="property">
+					<span>
+					1st Ionisation energy
+					</span><%= element.ionizationEnergy %>(KJ/mol)
+				</div>
+
+				<div class="property"><span>
+					Possible oxidation states
+					</span><%= element.oxidationStates %>
+				</div>
+
+				<div class="property"><span>
+					Standard state
+					</span><%= element.standardState %>
+				</div>
+				<div class="property"><span>
+					Discovered in
+					</span><%= element.yearDiscovered %>
+				</div>
+			</div>
+			<a id="home" href="/">Home</a>
+			
+			
+		</div>
+		<a id="wiki" href="https://en.wikipedia.org/wiki/<%= element.name %>">know more on wikipedia</a>
+	</body>
+	<script src="/js/element.js"></script>
+</html>

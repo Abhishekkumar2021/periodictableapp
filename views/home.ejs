@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Periodic table</title>
+		<link rel="stylesheet" href="/css/home.css" />
+		<link rel="stylesheet" href="/css/app.css" />
+	</head>
+	<body>
+		<div class="container">
+			<canvas ></canvas>
+			<nav>
+				<div class="search">
+					<ul>
+						<li id="name"
+							>Search by their names.For example : Hydrogen, Iron, etc.
+						</li>
+						<li id="number"
+							>Search by their atomic numbers. For example : 1,3,5,etc.</li
+						>
+						<li id="symbol"
+							>Search by their atomic symbols. For example : Fe,Co,etc.</li
+						>
+						<li id="bonding-type"
+							>Search by the type of bonding they show. For example : metallic,
+							atomic,diatomic,covalent network.</li
+						>
+						<li id="state">Search by their physical states</li>
+						<li id="group-block"
+							>Search by their group. For example : metal, nonmetal,noble
+							gas,alkali metal,alkaline earth metal, metalloid,halogen,
+							transition metal, lanthanoid, actinoid,post-transition metal)</li
+						>
+					</ul>
+				</div>
+				<form action="/elements/search">
+					<input
+						type="text"
+						name="name"
+						placeholder="Search elements by their name"
+						method="get"
+					/>
+				</form>
+
+				<a href="/elements/all">All elements</a>
+			</nav>
+			<h1> </h1>
+			<div class="end">Made with <div class="emoji">❤️</div> by Abhishek Kumar.</div>
+		</div>
+	</body>
+	<script src="/js/home.js"></script>
+</html>
