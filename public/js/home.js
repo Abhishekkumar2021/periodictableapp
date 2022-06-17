@@ -1,5 +1,5 @@
 const container = document.querySelector(".container h1");
-let text = "Welcome to the periodic table, the world of elements.";
+let text = "Welcome to the periodic table, the world of elements. This application can show you the properties of elements you want. You can search the element by using its name, group, state, etc. ";
 let index = 0;
 const id = setInterval(() => {
 	container.innerHTML += text[index];
